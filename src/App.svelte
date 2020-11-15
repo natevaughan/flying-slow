@@ -3,6 +3,7 @@
     import {onMount} from 'svelte';
     import {types} from './types';
     import Aircraft from "./Aircraft.svelte";
+    import {maxBy, minBy} from "./utils";
 
     let rows = [];
     const TYPE_ALL = 'all';
@@ -17,27 +18,10 @@
     let highlighted;
     let cruiseProfile = 1;
 
-    function minBy(arr, fieldName) {
-        let lowest = arr[0];
-        for (let i = arr.length-1; i>=0; i--) {
-            if (arr[i][fieldName] < lowest[fieldName]) lowest = arr[i];
-        }
-        return lowest
-    }
-
-    function maxBy(arr, fieldName) {
-        let highest = arr[0];
-        for (let i = arr.length-1; i>=0; i--) {
-            if (arr[i][fieldName] > highest[fieldName]) highest = arr[i];
-        }
-        return highest
-    }
-
     function interpolateSpeed(d) {
         let min = minBy(d.value, "Speed")
         let max = maxBy(d.value, "Speed")
         let interpolated = min.Speed + ((max.Speed - min.Speed) * cruiseProfile / 100);
-        console.log("min = " + min.Speed + " max = " + max.Speed + " " + cruiseProfile + "% interpolated " + interpolated)
         return x(interpolated)
     }
 
@@ -103,7 +87,6 @@
             }
             return true
         });
-        console.log("found " + filtered.length)
         return filtered
     }
 
@@ -123,7 +106,6 @@
             });
 
             let grouped = Array.from(group(data, d => d.Airplane), ([key, value]) => ({key, value}))
-            console.log(grouped)
 
             // define x and y scale functions
             x = scaleLinear()
@@ -196,6 +178,7 @@
 </style>
 <div class="container">
     <h1>{headline}</h1>
+    <a href="aircraft_data.csv">source data</a>
     <label>
         Engine type:
         <select bind:value={type}>
@@ -209,9 +192,8 @@
         Cruise profile:<br/>
         Max range <input type="range" min="1" max="100" bind:value={cruiseProfile} /> Max speed
     </label>
-    <p class="description">{description}</p>
     <div id="js-svg-container"></div>
     {#if highlighted}
-        <Aircraft aircraft={highlighted.value[0]} />
+        <Aircraft name={highlighted.key} performanceData={highlighted.value} />
     {/if}
 </div>

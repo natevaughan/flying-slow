@@ -1,5 +1,12 @@
 <script>
-    export let aircraft;
+    import {maxBy, minBy} from "./utils";
+    import {min} from 'd3'
+
+    export let name;
+    export let performanceData;
+    $: maxEcon = maxBy(performanceData, 'SMPG')
+    $: maxCruise = minBy(performanceData, 'SMPG')
+
     function roundNumber(num, dec) {
         return Math.round(num * Math.pow(10, dec)) / Math.pow(10, dec);
     }
@@ -12,9 +19,9 @@
     }
 </style>
 <div class="row">
-    <h3>{aircraft.Airplane}</h3>
-    <div>Seats: {aircraft.Seats}</div>
-    <div>SMPG: {aircraft.SMPG}</div>
-    <div>Econ cruise speed: <a href={aircraft.Source}>{aircraft.Speed} kts</a></div>
-    <div>MDW &rarr; BNA: {roundNumber(343 / aircraft.Speed, 1)} hrs</div>
+    <h3>{name}</h3>
+    <div>400-NM Seats: {min([performanceData[0]["400NMSeats"], performanceData[0]["Seats"]])}</div>
+
+    <div>Econ cruise: {maxEcon.Speed} kts @  {maxEcon.Burn} gph <a href={maxEcon.Source}>(source)</a></div>
+    <div>Max cruise: {maxCruise.Speed} kts @ {maxCruise.Burn} gph <a href={maxCruise.Source}>(source)</a></div>
 </div>
