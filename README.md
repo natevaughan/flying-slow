@@ -18,6 +18,6 @@ npm run dev
 
 ## Exporting static site
 ```bash
-npm run build
+npm run build && rm -rf docs && cp -r public docs
 ```
-Output will be in /public
+Output will be made available to github pages from /docs
