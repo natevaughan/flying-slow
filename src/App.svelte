@@ -16,20 +16,23 @@
     let x;
     let y;
     let highlighted;
+    let passengers = Number.POSITIVE_INFINITY;
     let cruiseProfile = 1;
 
     function interpolateSpeed(d) {
-        let min = minBy(d.value, "Speed")
-        let max = maxBy(d.value, "Speed")
-        let interpolated = min.Speed + ((max.Speed - min.Speed) * cruiseProfile / 100);
+        let least = minBy(d.value, "Speed")
+        let most = maxBy(d.value, "Speed")
+        let interpolated = least.Speed + ((most.Speed - least.Speed) * cruiseProfile / 100);
         return x(interpolated)
     }
 
 
     function interpolateEfficiency(d) {
-        let min = minBy(d.value, "Speed")
-        let max = maxBy(d.value, "Speed")
-        let interpolated = min.SMPG + ((max.SMPG - min.SMPG) * cruiseProfile / 100);
+        let least = minBy(d.value, "Speed")
+        let most = maxBy(d.value, "Speed")
+        let minSeats = min([d.value[0].Seats, d.value[0]['400NMSeats']]);
+        let seatFactor = (passengers === Number.POSITIVE_INFINITY) ? minSeats :  passengers + 1;
+        let interpolated = (least.MPG * seatFactor) + (((most.MPG - least.MPG) * cruiseProfile / 100) * seatFactor);
         return y(interpolated)
     }
 
@@ -46,7 +49,7 @@
         return list[Math.floor((Math.random() * list.length))];
     }
 
-    $: filteredRows = reFilterRows(rows, type);
+    $: filteredRows = reFilterRows(rows, type, passengers);
 
     $: {
         if (svg && filteredRows && cruiseProfile) {
@@ -81,9 +84,14 @@
         }
     }
 
-    function reFilterRows(sourceRows, typeString) {
+    function reFilterRows(sourceRows, typeString, passengerCount) {
         let filtered = sourceRows.filter(r => {
             if (typeString !== TYPE_ALL && r.value[0].Type !== type) {
+                return false
+            }
+            let minSeats = min([r.value[0].Seats, r.value[0]['400NMSeats']])
+            if (passengers !== Number.POSITIVE_INFINITY && minSeats < passengers + 1) {
+                console.log('filtered ' + r.Airplane)
                 return false
             }
             return true
@@ -99,12 +107,9 @@
 
         csv('aircraft_data.csv', autoType).then(data => {
 
-            let speeds = data.map(d => {
-                return d.Speed;
-            });
-            let smpg = data.map(d => {
-                return d.SMPG;
-            });
+            let speeds = data.map(d => d.Speed);
+            let smpg = data.map(d => d.SMPG);
+            let mpg = data.map(d => d.MPG);
 
             let grouped = Array.from(group(data, d => d.Airplane), ([key, value]) => ({key, value}))
 
@@ -114,7 +119,7 @@
                 .range([margin.left + radius, boxWidth - margin.right - radius]);
 
             y = scaleLinear()
-                .domain([max(smpg), min(smpg)])
+                .domain([max(smpg), min(mpg)])
                 .range([margin.top + radius, height - margin.bottom - radius]);
 
             svg = select('#js-svg-container')
@@ -168,10 +173,6 @@
         max-width: 600px;
         margin: 0 auto 200px auto;
     }
-    p {
-        min-height: 40px;
-        margin: 10px 0;
-    }
     input {
         padding: 0;
         margin: 0;
@@ -189,6 +190,16 @@
             {#each Object.keys(types) as id}
                 <option value={id}>{types[id].name}</option>
             {/each}
+        </select>
+    </label>
+    <label class="mb-2">
+        Passengers:
+        <select bind:value={passengers}>
+            <option value={0}>Solo</option>
+            {#each [1,2,3,4,5,6,7,8] as p}
+                <option value={p}>{p}</option>
+            {/each}
+            <option value={Number.POSITIVE_INFINITY}>Capacity</option>
         </select>
     </label>
     <label class="mb-2">
