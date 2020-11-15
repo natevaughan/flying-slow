@@ -4,8 +4,8 @@
 
     export let name;
     export let performanceData;
-    $: maxEcon = maxBy(performanceData, 'SMPG')
-    $: maxCruise = minBy(performanceData, 'SMPG')
+    $: maxEcon = minBy(performanceData, 'Speed')
+    $: maxCruise = maxBy(performanceData, 'Speed')
 
     function roundNumber(num, dec) {
         return Math.round(num * Math.pow(10, dec)) / Math.pow(10, dec);

@@ -63,6 +63,7 @@
                         .attr('fill', d => types[d.value[0].Type].color)
                         .attr('cx', interpolateSpeed)
                         .attr('cy', interpolateEfficiency)
+                        .style('cursor', 'pointer')
                         .call(e => e.transition(slow).attr('opacity', 1)),
                     update => update
                         .call(e => e.transition(slow)
@@ -175,11 +176,13 @@
         padding: 0;
         margin: 0;
     }
+    .mb-2 {
+        margin-bottom: 8px;
+    }
 </style>
 <div class="container">
     <h1>{headline}</h1>
-    <a href="aircraft_data.csv">source data</a>
-    <label>
+    <label class="mb-2">
         Engine type:
         <select bind:value={type}>
             <option value={TYPE_ALL}>Show all</option>
@@ -188,12 +191,12 @@
             {/each}
         </select>
     </label>
-    <label>
-        Cruise profile:<br/>
+    <label class="mb-2">
         Max range <input type="range" min="1" max="100" bind:value={cruiseProfile} /> Max speed
     </label>
     <div id="js-svg-container"></div>
     {#if highlighted}
         <Aircraft name={highlighted.key} performanceData={highlighted.value} />
     {/if}
+    <div class="mb-2"><a href="aircraft_data.csv">download all source data</a></div>
 </div>
