@@ -201,4 +201,5 @@
         <div>click any data point to see airfraft and stats</div>
     {/if}
     <div class="mb-2"><a href="aircraft_data.csv">download all source data</a></div>
+    <div class="mb-2"><a href="https://github.com/natevaughan/flying-slow">see source code</a></div>
 </div>
