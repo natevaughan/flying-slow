@@ -86,15 +86,17 @@
 
     function reFilterRows(sourceRows, typeString, passengerCount) {
         let filtered = sourceRows.filter(r => {
-            if (typeString !== TYPE_ALL && r.value[0].Type !== type) {
-                return false
-            }
+            let allowed = true
             let minSeats = min([r.value[0].Seats, r.value[0]['400NMSeats']])
-            if (passengers !== Number.POSITIVE_INFINITY && minSeats < passengers + 1) {
-                console.log('filtered ' + r.Airplane)
-                return false
+            if (typeString !== TYPE_ALL && r.value[0].Type !== type) {
+                allowed = false
+            } else if (passengers !== Number.POSITIVE_INFINITY && minSeats < passengerCount + 1) {
+                allowed = false
             }
-            return true
+            if (!allowed && r === highlighted) {
+                highlighted = undefined;
+            }
+            return allowed
         });
         return filtered
     }
@@ -177,9 +179,6 @@
         padding: 0;
         margin: 0;
     }
-    .mb-2 {
-        margin-bottom: 8px;
-    }
 </style>
 <div class="container">
     <h1>{headline}</h1>
@@ -207,10 +206,10 @@
     </label>
     <div id="js-svg-container"></div>
     {#if highlighted}
-        <Aircraft name={highlighted.key} performanceData={highlighted.value} />
+        <Aircraft name={highlighted.key} performanceData={highlighted.value} {passengers} {cruiseProfile} />
     {:else}
-        <div>click any data point to see airfraft and stats</div>
+        <div class="mb-4">click any data point to see aircraft and stats</div>
     {/if}
-    <div class="mb-2"><a href="aircraft_data.csv">download all source data</a></div>
-    <div class="mb-2"><a href="https://github.com/natevaughan/flying-slow">see source code</a></div>
+    <div class="mb-4"><a href="aircraft_data.csv">download all source data</a></div>
+    <div><a href="https://github.com/natevaughan/flying-slow">see source code</a></div>
 </div>
