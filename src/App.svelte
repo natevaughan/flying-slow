@@ -7,7 +7,7 @@
 
     let rows = [];
     const TYPE_ALL = 'all';
-    let type = 'NA';
+    let type = TYPE_ALL;
     $: description = types[type] ? types[type].description : '';
     let loading = true;
     let headline = "Loading";
@@ -197,6 +197,8 @@
     <div id="js-svg-container"></div>
     {#if highlighted}
         <Aircraft name={highlighted.key} performanceData={highlighted.value} />
+    {:else}
+        <div>click any data point to see airfraft and stats</div>
     {/if}
     <div class="mb-2"><a href="aircraft_data.csv">download all source data</a></div>
 </div>
