@@ -9,25 +9,25 @@
 
     $: maxEcon = minBy(performanceData, 'Speed')
     $: maxCruise = maxBy(performanceData, 'Speed')
-    $: interpolatedSpeed = interpolateSpeed(cruiseProfile)
-    $: interpolatedSmpg = interpolateEfficiency(cruiseProfile, passengers)
+    $: interpolatedSpeed = interpolateSpeed(maxEcon, maxCruise, cruiseProfile)
+    $: interpolatedSmpg = interpolateEfficiency(maxEcon, maxCruise, cruiseProfile, passengers)
 
 
-    function interpolateSpeed(profile) {
+    function interpolateSpeed(econ, fast, profile) {
         if (!profile) {
             return
         }
-        return maxEcon.Speed + ((maxCruise.Speed - maxEcon.Speed) * profile / 100);
+        return econ.Speed + ((fast.Speed - econ.Speed) * profile / 100);
     }
 
 
-    function interpolateEfficiency(profile, passg) {
+    function interpolateEfficiency(econ, fast, profile, passg) {
         if (!profile || typeof passg === 'undefined') {
             return
         }
-        let minSeats = min([maxEcon.Seats, maxEcon['400NMSeats']]);
+        let minSeats = min([econ.Seats, econ['400NMSeats']]);
         let seatFactor = (passg === Number.POSITIVE_INFINITY) ? minSeats : min([minSeats, (passg + 1)]);
-        return (maxEcon.MPG * seatFactor) + (((maxCruise.MPG - maxEcon.MPG) * profile / 100) * seatFactor);
+        return (econ.MPG * seatFactor) + (((fast.MPG - econ.MPG) * profile / 100) * seatFactor);
     }
 
     function roundNumber(num, dec) {
@@ -37,7 +37,6 @@
 <style>
     .row {
         margin-top: 4px;
-        margin-bottom: 4px;
         font-family: "Courier New", Courier, fixed-width;
     }
     .highlight {
@@ -52,6 +51,6 @@
         <div class="highlight mb-2">Solo @ {roundNumber(interpolatedSpeed, 0)} kts: {roundNumber(interpolatedSmpg, 1)} MPG</div>
     {/if}
     <div>400-NM Seats: {min([performanceData[0]["400NMSeats"], performanceData[0]["Seats"]])}</div>
-    <div>Econ cruise: {maxEcon.Speed} kts,  {maxEcon.Burn} gph @ {maxEcon.Altitude || 'unknown' } ft <a href={maxEcon.Source}>(source)</a></div>
-    <div>Max cruise: {maxCruise.Speed} kts, {maxCruise.Burn} gph @ {maxCruise.Altitude || 'unknown' } ft <a href={maxCruise.Source}>(source)</a></div>
+    <div>Econ cruise: {maxEcon.Speed} kts,  {maxEcon.Burn} gph @ {maxEcon.Altitude ? maxEcon.Altitude + ' ft' : '-' } <a href={maxEcon.Source}>(source)</a></div>
+    <div>Max cruise: {maxCruise.Speed} kts, {maxCruise.Burn} gph @ {maxCruise.Altitude ? maxCruise.Altitude + ' ft' : '-' } <a href={maxCruise.Source}>(source)</a></div>
 </div>
