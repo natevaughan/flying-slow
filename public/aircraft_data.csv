@@ -1,0 +1,91 @@
+Airplane,Certification,Engine,Type,No,Seats,Useful,Profile,Source,Altitude,Speed,Burn,FuelCap,400NMSeats,MPG,SMPG,Range,Endurance
+Pipistrel Alpha Electro,Certified,PEM 60MVLC,E,1,2,400,85% cruise,https://www.pipistrel-aircraft.com/aircraft/electric-flight/alpha-electro/#tab-id-2,5000,85,1.5,1.5,2,65.9,131.8,43,1.0
+Diamond DA-62,Certified,AE330 x2,TD,2,7,1609,Econ cruise,https://www.flyingmag.com/we-fly-diamond-da62/,14000,170,11.8,86,8,16.6,116.0,1154,7.3
+Diamond DA-40NG,Certified,AE300,TD,1,4,904,Econ cruise,https://www.flyingmag.com/we-fly-diamond-da40-ng/,9500,126,5.1,41,4,28.4,113.6,950,8.0
+Cessna 172 JT-A,Certified,Continental CD-155,TD,1,4,860,Econ cruise,https://www.flyingmag.com/continental-receives-faa-and-easa-stc-for-cessna-172s-equipped-with-cd-155-diesel-engine/,8000,109,4.9,50,4,25.6,102.3,1058,10.2
+Glasair Sportsman,Experimental,CD-155,TD,1,4,1000,65% Cruise,https://glasairaviation.com/sportsman/diesel-specs/,8000,122,5.8,50,5,24.2,96.8,991,8.6
+Sling TSI,Experimental,Rotax 915,T,1,4,1015,Econ cruise,https://www.aopa.org/news-and-media/all-news/2019/july/pilot/breaking-boundaries,7500,147,7,45,5,24.2,96.6,872,6.4
+Sling TSI,Experimental,Rotax 915,T,1,4,1015,High cruise,https://generalaviationnews.com/2019/03/04/flying-the-sling-tsi/,9000,155,8,45,5,22.3,89.1,794,5.6
+Sling TSI,Experimental,Rotax 915,T,1,4,1015,Mid cruise,https://www.aopa.org/news-and-media/all-news/2019/july/pilot/breaking-boundaries,7500,152,8,45,5,21.9,87.4,779,5.6
+Cirrus SR-20,Certified,Continental IO-360 ES,NA,1,4,950,55% power,https://www.planeandpilotmag.com/article/cirrus-sr20/,14000,149,8.1,60,4,21.2,84.6,1029,7.4
+Diamond DA-62,Certified,AE330 x2,TD,2,7,1609,High cruise,https://www.flyingmag.com/we-fly-diamond-da62/,14000,195,18.6,86,7,12.1,84.4,804,4.6
+Diamond DA-40NG,Certified,AE300,TD,1,4,904,High cruise,https://www.flyingmag.com/we-fly-diamond-da40-ng/,9500,150,8.2,41,4,21.0,84.1,675,5.0
+Vari-Eze,Experimental,Continental O-200-A,NA,1,2,650,Max cruise,https://www.kitplanes.com/flight-review-back-to-the-future/,4500,151,4.2,36,3,41.3,82.7,1219,8.6
+Piper Archer DX,Certified,Continental CD-155,TD,1,4,794,Econ cruise,https://www.ainonline.com/aviation-news/general-aviation/2018-11-21/pilot-report-piper-diesel-archer,10500,100,4.2,48,3,27.4,82.1,1093,11.4
+Vari-Eze,Experimental,Continental O-200-A,NA,1,2,650,Econ cruise,https://www.kitplanes.com/flight-review-back-to-the-future/,11000,138,3.9,36,3,40.7,81.4,1205,9.2
+Piper Mirage,Certified,Lycoming TIO-540,T,1,6,1223,26in/2200,https://www.aopa.org/news-and-media/all-news/2011/june/01/piper-mirage-pressurization,23000,184,13.4,120,5,15.8,79.0,1556,9.0
+Lancair Evolution Piston,Experimental,Lycoming YTIO-550,T,1,4,1900,Econ cruise,https://www.flyingmag.com/we-fly-lancair-evolution-piston/,17500,202,11.9,168,10,19.5,78.1,2751,14.1
+Glasair Sportsman,Experimental,CD-155,TD,1,4,1000,75% Cruise,https://glasairaviation.com/sportsman/diesel-specs/,8000,132,7.8,50,4,19.5,77.8,780,6.4
+Technam P2010 TDI,Certified,Continental TD-170,TD,1,4,805,60% power,https://www.tecnam.com/aircraft/p2010tdi-the-first-tecnam-jet-diesel-aircraft/,9000,115,5.2,63,3,25.4,76.3,1336,12.1
+Cirrus SR-20,Certified,Continental IO-360 ES,NA,1,4,950,65% power,https://www.planeandpilotmag.com/article/cirrus-sr20/,10000,155,9.4,60,4,19.0,75.9,912,6.4
+Cirrus SR-20,Certified,Continental IO-360 ES,NA,1,4,950,LOP,https://philip.greenspun.com/flying/cirrus-sr20,,140,8.5,56,4,18.9,75.8,852,6.6
+Beech Bonanza A36,Certified,Continental IO-550,NA,1,6,1130,Mid cruise,https://www.beechtalk.net/download/Economical-Baron-ABS-Article.pdf,10000,160,12.5,166,5,14.7,73.6,2045,13.3
+Pipistrel Panthera,Certified,Lycoming IO-540,NA,1,4,1100,65% power,https://rightrudderaviation.com/panthera/,12000,193,12.2,55,5,18.2,72.8,774,4.5
+Sonex Sonex,Experimental,Jaibru 3300,NA,1,2,530,Econ cruise,https://www.sonexaircraft.com/35-dollar-hamburger/,2000,113,3.6,17,2,36.1,72.2,477,4.7
+Van's RV-10,Experimental,Lycoming IO-540,NA,1,4,1050,Econ cruise,https://www.pilotsofamerica.com/community/threads/the-van%E2%80%99s-rv-10-is-it-the-perfect-airplane.119616/,9000,155,10,60,5,17.8,71.3,853,6.0
+Cirrus SR-20,Certified,Continental IO-360 ES,NA,1,4,950,75% power,https://www.planeandpilotmag.com/article/cirrus-sr20/,6500,160,10.4,60,4,17.7,70.8,843,5.8
+Bristel 915,Certified,Rotax 915,T,1,2,500,Econ cruise,https://www.aopa.org/news-and-media/all-news/2020/april/pilot/bristell-915,15000,120,4,31,2,34.5,69.0,870,7.8
+Technam P2010 TDI,Certified,Continental TD-170,TD,1,4,805,75% power,https://www.tecnam.com/aircraft/p2010tdi-the-first-tecnam-jet-diesel-aircraft/,9000,132,6.6,63,3,23.0,69.0,1194,9.5
+Van's RV-10,Experimental,Lycoming IO-540,NA,1,4,1050,Econ cruise,https://www.pilotsofamerica.com/community/threads/the-van%E2%80%99s-rv-10-is-it-the-perfect-airplane.119616/,9000,165,11,60,5,17.3,69.0,818,5.5
+Beech Bonanza A36,Certified,Continental IO-550,NA,1,6,1130,High cruise,https://www.beechtalk.net/download/Economical-Baron-ABS-Article.pdf,10000,177,15,166,5,13.6,67.9,1870,11.1
+Sonex Sonex,Experimental,Jaibru 3300,NA,1,2,530,Mid cruise,https://www.sonexaircraft.com/35-dollar-hamburger/,5000,141,4.8,17,2,33.8,67.6,429,3.5
+Mooney M-20C,Certified,Lycoming O-360,NA,1,4,950,"FT, 50 deg ROP",http://www.mooneypilots.com/mapalog/M20C%20Evaluation/M20C_Evaluation_Report.html,10000,139,9.5,52,4,16.8,67.3,691,5.5
+Mooney M-20F,Certified,Lycoming IO-360,NA,1,4,950,"FT, 50 deg ROP",http://www.mooneypilots.com/mapalog/M20F%20Evaluation/M20F_Evaluation_Report.html,10000,145,10,64,4,16.7,66.7,856,6.4
+Piper Archer DX,Certified,Continental CD-155,TD,1,4,794,Mid cruise,https://www.ainonline.com/aviation-news/general-aviation/2018-11-21/pilot-report-piper-diesel-archer,10500,109,5.7,48,3,22.0,66.0,863,8.4
+Diamond DA-42,Certified,Thielert Centurion 1.7,TD,2,4,1053,70% power,https://www.aopa.org/news-and-media/all-news/2006/november/pilot/diamond-aircraft-da42-twin-star,11200,148,10.4,76,5,16.4,65.5,1008,7.3
+Piper Archer DX,Certified,Continental CD-155,TD,1,4,794,75% cruise,https://www.ainonline.com/aviation-news/general-aviation/2018-11-21/pilot-report-piper-diesel-archer,10500,117,6.3,48,3,21.4,64.1,833,7.6
+Cessna P210R,Certified,Continental TSIO-520,T,1,6,1629,75% cruise,https://cessnaowner.org/cessna-210-high-wing-cruiser/,,190,20.5,115,7,10.7,64.0,971,5.6
+Mooney M-20J,Certified,Lycoming IO-360,NA,1,4,950,High cruise,http://www.mooneypilots.com/mapalog/M20J%20Evaluation/M20J_evaluation_report.html,10000,158,11.5,56,4,15.8,63.2,690,4.9
+Beech Baron 58,Certified,Continental IO-520,NA,2,6,1640,Econ cruise,https://www.beechtalk.net/download/Economical-Baron-ABS-Article.pdf,10000,162,17.8,166,7,10.5,62.8,1430,9.3
+Cirrus SR-22T,Certified,Continental TSIO-550,T,1,4,1260,Econ cruise,https://www.aopa.org/news-and-media/all-news/2013/may/pilot/cirrus-sr22t-more-of-a-good-thing,25000,171,12.7,92,6,15.5,61.9,1153,7.2
+Pipistrel Panthera,Certified,Lycoming IO-540,NA,1,4,1100,75% power,https://rightrudderaviation.com/panthera/,8000,198,14.8,55,5,15.4,61.5,637,3.7
+Diamond DA-42,Certified,Thielert Centurion 1.7,TD,2,4,1053,80% power,https://www.aopa.org/news-and-media/all-news/2006/november/pilot/diamond-aircraft-da42-twin-star,13200,155,11.6,76,4,15.4,61.5,938,6.6
+Cessna Silver Eagle 210,Certified,Allison 250 B17,JP,1,6,1270,High cruise,https://www.silvereagleopa.com/for-pilots/,23000,173,16.2,115,5,12.3,61.4,1142,7.1
+Cirrus SR-22T,Certified,Continental TSIO-550,T,1,5,1061,Mid cruise,https://www.flyingmag.com/aircrafts/pistons/cirrus-sr22t-tried-true-turbo/,16500,172,13,92,4,15.2,60.9,1131,7.1
+Piper Commanche 250,Certified,Lycoming IO-540,NA,1,4,1110,60% power,https://www.avweb.com/features/piper-comanche/,8500,178,13.5,90,5,15.2,60.7,1098,6.7
+Cessna Silver Eagle 210,Certified,Allison 250 B17,JP,1,6,1270,Mid cruise,https://www.silvereagleopa.com/for-pilots/,23000,181,17.2,115,5,12.1,60.5,1120,6.7
+Piper Mirage,Certified,Lycoming TIO-540,T,1,6,1223,32in/2500,https://www.aopa.org/news-and-media/all-news/2011/june/01/piper-mirage-pressurization,23000,214,20.4,120,5,12.1,60.3,1152,5.9
+Piper Archer II,Certified,Lycoming O-360,NA,1,4,930,55% cruise,https://www.planeandpilotmag.com/article/1978-piper-pa-28-181-archer-ii/,,102,7.8,48,4,15.0,60.2,577,6.2
+Piper Archer II,Certified,Lycoming O-360,NA,1,4,930,65% cruise,https://www.planeandpilotmag.com/article/1978-piper-pa-28-181-archer-ii/,,116,9,48,4,14.8,59.3,561,5.3
+Sonex Sonex,Experimental,Jaibru 3300,NA,1,2,530,High cruise,https://www.sonexaircraft.com/35-dollar-hamburger/,9000,157,6.1,17,2,29.6,59.2,359,2.8
+Cirrus SR-22T,Certified,Continental TSIO-550,T,1,5,1061,Mid cruise,https://www.flyingmag.com/aircrafts/pistons/cirrus-sr22t-tried-true-turbo/,16500,185,14.5,92,4,14.7,58.7,1081,6.3
+Beech Baron 58,Certified,Continental IO-520,NA,2,6,1640,Mid cruise,https://www.beechtalk.net/download/Economical-Baron-ABS-Article.pdf,10000,170,20,166,7,9.8,58.7,1326,8.3
+Mooney M-20C,Certified,Lycoming O-360,NA,1,4,950,"FT, 50 deg ROP",http://www.mooneypilots.com/mapalog/M20C%20Evaluation/M20C_Evaluation_Report.html,4500,146,11.5,52,4,14.6,58.4,587,4.5
+Bristel 915,Certified,Rotax 915,T,1,2,500,Mid cruise,https://www.aopa.org/news-and-media/all-news/2020/april/pilot/bristell-915,15000,125,5,31,2,28.8,57.5,713,6.2
+Flight Design CTLS,Certified,Rotax 912is,NA,1,2,674,75% cruise,https://www.planeandpilotmag.com/article/2006-flight-design-ct/,-,112,4.5,34,3,28.6,57.2,790,7.6
+Mooney M-20F,Certified,Lycoming IO-360,NA,1,4,950,"FT, 50 deg ROP",http://www.mooneypilots.com/mapalog/M20F%20Evaluation/M20F_Evaluation_Report.html,4500,148,12,64,4,14.2,56.7,715,5.3
+Piper Archer II,Certified,Lycoming O-360,NA,1,4,930,75% cruise,https://www.planeandpilotmag.com/article/1978-piper-pa-28-181-archer-ii/,,125,10.5,48,4,13.7,54.8,509,4.6
+Beech Baron 58,Certified,Continental IO-520,NA,2,6,1640,High cruise,https://www.beechtalk.net/download/Economical-Baron-ABS-Article.pdf,10000,175,22.4,166,7,9.0,53.9,1209,7.4
+Cirrus SR-22T,Certified,Continental TSIO-550,T,1,4,1260,High cruise,https://www.aopa.org/news-and-media/all-news/2013/may/pilot/cirrus-sr22t-more-of-a-good-thing,25000,213,18.3,92,5,13.4,53.5,964,5.0
+Pilatus PC-12 NG,Certified,PT6A-67P,JP,1,9,2866,Econ cruise,https://www.planeandpilotmag.com/article/second-generation-pilatus-pc-12/,30000,218,42.3,402,13,5.9,53.3,1963,9.5
+Mooney M20M,Certified,Lycoming TIO-540,T,1,4,1100,Peak TIT cruise,https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/mooney-bravo,17500,200,17.5,89,5,13.1,52.6,917,5.1
+Cessna Silver Eagle 210,Certified,Allison 250 B17,JP,1,6,1270,High cruise,https://www.silvereagleopa.com/for-pilots/,21000,201,22.1,115,5,10.5,52.3,945,5.2
+Long EZ,Experimental,Lycoming O-320,NA,1,2,750,High cruise,http://www.longezpilot.com/N6PC%20page8.htm,3500,184,8.2,50,3,25.8,51.6,1030,6.1
+Vans RV-9A,Experimental,Lycoming O-320,NA,1,2,700,Max endurance,https://vansairforce.com/community/showpost.php?s=0b09a948b7c5609dc69040754c7d9f00&p=203024&postcount=7,8000,150,6.8,36,3,25.4,50.7,719,5.3
+Pilatus PC-12 NG,Certified,PT6A-67P,JP,1,9,2866,Mid cruise,https://www.planeandpilotmag.com/article/second-generation-pilatus-pc-12/,27000,275,56.8,402,13,5.6,50.1,1809,7.1
+Bristel 915,Certified,Rotax 915,T,1,2,500,Mid cruise,https://www.aopa.org/news-and-media/all-news/2020/april/pilot/bristell-915,15000,130,6,31,2,24.9,49.8,607,5.2
+Mooney M20M,Certified,Lycoming TIO-540,T,1,4,1100,Max cruise,https://www.aopa.org/go-fly/aircraft-and-ownership/aircraft-fact-sheets/mooney-bravo,25000,215,20.5,89,4,12.1,48.2,826,4.3
+TBM 900,Certified,PT6,JP,1,6,2400,Econ cruise,https://www.aopa.org/news-and-media/all-news/2014/april/pilot/1404p_t_tbm,31000,262,39,292,11,7.7,46.4,1831,7.5
+Lancair Evolution Piston,Experimental,Lycoming YTIO-550,T,1,4,1900,High cruise,http://www.evolutionaircraft.com/aircraft/evolution-piston/,24000,230,23,168,9,11.5,46.0,1565,7.3
+Cessna 172SP,Certified,Lycoming IO-360,NA,1,4,859,High cruise,https://www.cospilot.com/aircraft/cessna-172sp.html,8500,124,10.2,53,3,14.0,41.9,582,5.2
+Cirrus SF-50,Certified,Williams FJ33,J,1,7,2499,Econ cruise,https://www.ainonline.com/aviation-news/general-aviation/2015-12-02/cirrus-teases-vision-sf50-performance-numbers,28000,242,47,215,11,5.9,41.4,986,4.6
+Lancair Evolution Turbine 850,Experimental,PT6-140A,JP,1,4,1880,Econ cruise,http://www.evolutionaircraft.com/aircraft/evolution-turbine/#specs-top,28000,225,25,168,9,10.4,41.4,1400,6.7
+Evektor Harmony,Certified,Rotax 912is,NA,1,2,500,Econ cruise,,5000,88,4.9,32,2,20.7,41.3,531,6.5
+Cessna 150,Certified,Continental O-200-A,NA,1,2,490,High cruise,https://www.cessnaflyer.org/specifications-105.html,-,107,6,26,2,20.5,41.0,410,4.3
+Piper M600,Certified,PT6A-42A,JP,1,6,2400,Max cruise,https://www.skiesmag.com/features/capable-contender-flying-the-piper-m600/,28000,272,45.8,260,11,6.8,41.0,1408,5.7
+Pilatus PC-12 NG,Certified,PT6A-67P,JP,1,9,2866,High cruise,https://www.planeandpilotmag.com/article/second-generation-pilatus-pc-12/,20000,280,74.4,402,12,4.3,39.0,1373,5.4
+Cessna 182,Certified,Continental O-470,NA,1,4,1377,High cruise,https://www.avweb.com/features/cessna-182-skylane/,6500,139,16.5,84,6,9.7,38.8,638,5.1
+Glasair III RG,Experimental,Lycoming IO-540,NA,1,2,900,High cruise,https://www.youtube.com/watch?v=-SBfVzTO_gU&app=desktop,,205,12.3,85,4,19.2,38.3,1314,6.9
+TBM 900,Certified,PT6,JP,1,6,2400,High cruise,https://www.aopa.org/news-and-media/all-news/2014/april/pilot/1404p_t_tbm,31000,327,60,215,11,6.3,37.6,1008,3.6
+Eclipse 550,Certified,PW610F,J,2,5,2400,Mid cruise,http://oneaviation.aero/eclipse/550.php#economics,41000,374,59,251,11,7.3,36.4,1404,4.3
+Piper M600,Certified,PT6A-42A,JP,1,6,2400,Max cruise,https://www.aviationconsumer.com/aircraftreviews/piper-m600-more-of-everything/,17500,256,49.5,260,10,5.9,35.7,1217,5.3
+TBM 900,Certified,PT6,JP,1,6,2400,High cruise,https://www.aopa.org/news-and-media/all-news/2014/april/pilot/1404p_t_tbm,29000,330,65,292,10,5.8,35.0,1317,4.5
+Premier 1A,Certified,Williams FJ44-2A,J,2,8,3990,Econ cruise,http://jetav.com/hawker-beechcraft-premier-ia-performance-specs/,41000,369,100,556,18,4.2,33.9,1867,5.6
+Lancair Evolution Turbine 850,Experimental,PT6-140A,JP,1,4,1880,High cruise,http://www.evolutionaircraft.com/aircraft/evolution-turbine/#specs-top,25000,330,45,168,8,8.4,33.7,1067,3.7
+Cirrus SF-50,Certified,Williams FJ33,J,1,5,2499,High cruise,https://www.ainonline.com/aviation-news/general-aviation/2015-12-02/cirrus-teases-vision-sf50-performance-numbers,28000,300,69,215,10,5.0,25.0,785,3.1
+Premier 1A,Certified,Williams FJ44-2A,J,2,8,3990,High cruise,http://jetav.com/hawker-beechcraft-premier-ia-performance-specs/,41000,451,182,556,16,2.8,22.8,1152,3.1
+Bristel 915,Certified,Rotax 915,T,1,2,500,High cruise,https://www.aopa.org/news-and-media/all-news/2020/april/pilot/bristell-915,15000,141,9,31,1,18.0,18.0,415,3.4
+Hondajet,Certified,GE Honda HF-120-H1A,J,2,6,3400,High cruise,https://www.libertyjet.com/private_jets/HondaJet,,368,160,430,13,2.6,15.9,805,2.7
+Sonex Subsonex,Experimental,PBS TJ-100,J,1,1,500,Econ cruise,http://twinandturbine.com/article/microjet-fun-flying-subsonex-bonus/,17500,189,16,39,1,13.6,13.6,366,2.4
+Pipistrel Virus SW,Certified,Rotax 912,NA,1,2,665,Econ cruise,https://www.pipistrel-usa.com/virus-sw/#technical_data,,147,4.7,26,3,36.0,71.9,740,5.5
+Pipistrel Virus SW,Certified,Rotax 912,NA,1,2,665,Econ cruise,https://www.pipistrel-usa.com/virus-sw/#technical_data,,120,3,26,3,46.0,92.0,980,8.7
